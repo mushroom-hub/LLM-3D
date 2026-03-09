@@ -54,13 +54,15 @@ conda activate llm3d`
 
 Interfce主要包含了前端代码、物体解析大模型（Object-Parser LLM）代码、RAG检索和word2vec词向量相关代码：
 
-`Interface/  
-└── code/  
-    ├── page/                 # 前端页面代码  
-    ├── EnvGenerator.py       # 物体解析大模型（Object-Parser LLM）代码  
-    │                         # 用于生成3D场景所需物体列表  
-    ├── RAG/                   # 增强检索（Retrieval-Augmented Generation）代码  
-    └── word2vec/              # 词向量相关代码`
+```
+Interface/
+└── code/
+    ├── page/                 # 前端页面代码
+    ├── EnvGenerator.py       # 物体解析大模型（Object-Parser LLM）代码
+    │                         # 用于生成3D场景所需物体列表
+    ├── RAG/                  # 增强检索（Retrieval-Augmented Generation）代码
+    └── word2vec/             # 词向量相关代码
+```
     
 ### Respace
 

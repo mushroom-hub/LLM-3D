@@ -1,0 +1,339 @@
+{
+    "bounds_bottom": [
+        [
+            -1.35,
+            0.0,
+            1.45
+        ],
+        [
+            0.15,
+            0.0,
+            1.45
+        ],
+        [
+            0.15,
+            0.0,
+            2.15
+        ],
+        [
+            1.35,
+            0.0,
+            2.15
+        ],
+        [
+            1.35,
+            0.0,
+            -2.15
+        ],
+        [
+            -1.35,
+            0.0,
+            -2.15
+        ]
+    ],
+    "bounds_top": [
+        [
+            -1.35,
+            2.6,
+            1.45
+        ],
+        [
+            0.15,
+            2.6,
+            1.45
+        ],
+        [
+            0.15,
+            2.6,
+            2.15
+        ],
+        [
+            1.35,
+            2.6,
+            2.15
+        ],
+        [
+            1.35,
+            2.6,
+            -2.15
+        ],
+        [
+            -1.35,
+            2.6,
+            -2.15
+        ]
+    ],
+    "objects": [
+        {
+            "desc": "木质双人床，配有柔软的白色被褥和靠枕，营造温馨睡眠氛围。",
+            "pos": [
+                0.0,
+                0.0,
+                0.5
+            ],
+            "rot": [
+                0,
+                0,
+                0,
+                1
+            ],
+            "sampled_asset_desc": "This contemporary lounge chair features a woven brown wicker frame, gray fabric cushions, and sleek tapered metal legs, perfect for stylish comfort.",
+            "sampled_asset_jid": "1bae26c6-c9ac-456d-8171-9ea8efb5afd8",
+            "sampled_asset_size": [
+                0.8338119983673096,
+                0.8408489943227506,
+                0.6693760752677917
+            ],
+            "size": [
+                2.0,
+                1.5,
+                0.3
+            ],
+            "uuid": "78f52f05-d3ad-477f-afa8-fc435a54b83e"
+        },
+        {
+            "desc": "木质床头柜，摆放一盏台灯和一本翻开的书，增添生活气息。",
+            "pos": [
+                -0.8,
+                0.0,
+                0.5
+            ],
+            "rot": [
+                0,
+                0,
+                0,
+                1
+            ],
+            "sampled_asset_desc": "An elegant classic ceiling lamp with an octagonal wooden base and ribbed frosted glass shade.",
+            "sampled_asset_jid": "581fa64e-ab79-428e-9876-0e0d6c1e72fc",
+            "sampled_asset_size": [
+                0.595088005065918,
+                0.39765663439357013,
+                0.6870800256729126
+            ],
+            "size": [
+                0.6,
+                0.4,
+                0.7
+            ],
+            "uuid": "f2509ffe-2105-4cd2-bf91-6acd64084098"
+        },
+        {
+            "desc": "浅灰色窗帘，垂挂在窗户两侧，透出柔和光线。",
+            "pos": [
+                0.5,
+                1.0,
+                0.0
+            ],
+            "rot": [
+                0,
+                0,
+                0,
+                1
+            ],
+            "sampled_asset_desc": "Elegant contemporary floor lamp with gold metal frame, beige tapered fabric shade, and adjustable height.",
+            "sampled_asset_jid": "fd6e24cf-cfb7-4881-9f0f-a1536a0718b9",
+            "sampled_asset_size": [
+                0.4479199945926666,
+                1.6343799997722552,
+                0.44567999243736267
+            ],
+            "size": [
+                1.5,
+                0.1,
+                2.5
+            ],
+            "uuid": "88f44101-4b01-478e-af48-200033fabe60"
+        },
+        {
+            "desc": "棕色毛绒地毯，覆盖床前区域，提升舒适感。",
+            "pos": [
+                -1.0,
+                -0.5,
+                0.0
+            ],
+            "rot": [
+                0,
+                0,
+                0,
+                1
+            ],
+            "sampled_asset_desc": "Traditional Oriental landscape painting set on canvas with gray wooden frames, depicting serene mountain and waterfall scenes in dual panels.",
+            "sampled_asset_jid": "80fcbdcd-3775-4e6d-9472-f626c1ecd3b3",
+            "sampled_asset_size": [
+                2.026599884033203,
+                1.431450011333113,
+                0.052639998495578766
+            ],
+            "size": [
+                2.0,
+                1.5,
+                0.05
+            ],
+            "uuid": "26ae2a88-adb9-4c14-b895-cb1d5a054b6e"
+        },
+        {
+            "desc": "黄铜底座的台灯，灯光温暖，照亮床头区域。",
+            "pos": [
+                -0.8,
+                0.2,
+                1.2
+            ],
+            "rot": [
+                0,
+                0,
+                0,
+                1
+            ],
+            "sampled_asset_desc": "A traditional, dark brown wooden coffee table with an Asian-inspired design featuring intricate leg patterns and a rectangular shape.",
+            "sampled_asset_jid": "e2551b13-172a-4e79-b17d-4823c0fba30a",
+            "sampled_asset_size": [
+                1.5008609890937805,
+                0.3843379245857683,
+                1.1204839944839478
+            ],
+            "size": [
+                0.2,
+                0.2,
+                0.5
+            ],
+            "uuid": "a988d900-3629-49c0-8733-0775ce89ad17"
+        },
+        {
+            "desc": "实木衣柜，门半开，露出整齐悬挂的衣物，体现生活痕迹。",
+            "pos": [
+                1.0,
+                0.0,
+                0.5
+            ],
+            "rot": [
+                0,
+                0,
+                0,
+                1
+            ],
+            "sampled_asset_desc": "Modern black metal ceiling lamp with fabric-covered wires and multiple cone-shaped hanging lights.",
+            "sampled_asset_jid": "ef917afd-ad81-4e88-99e3-519f71937dff",
+            "sampled_asset_size": [
+                1.2142860293388367,
+                0.682833164009935,
+                1.7944950461387634
+            ],
+            "size": [
+                1.2,
+                0.6,
+                1.8
+            ],
+            "uuid": "24fd98b5-826f-4a2f-9281-32af58c14425"
+        },
+        {
+            "desc": "圆形镜面挂在衣柜上方，反射窗外光线，增加空间感。",
+            "pos": [
+                1.0,
+                0.8,
+                1.2
+            ],
+            "rot": [
+                0,
+                0,
+                0,
+                1
+            ],
+            "sampled_asset_desc": "Modern minimalist dark gray and black microwave with a sleek rectangular design, digital display, and control knobs.",
+            "sampled_asset_jid": "2267c0f1-f1fa-424d-b395-01bfb2b647cf",
+            "sampled_asset_size": [
+                0.4963800013065338,
+                0.2958399954998829,
+                0.04082001559436321
+            ],
+            "size": [
+                0.5,
+                0.3,
+                0.05
+            ],
+            "uuid": "b5ff7bdc-625e-47a3-963e-a8f49249febf"
+        },
+        {
+            "desc": "单层玻璃窗，位于房间右侧，与窗帘配合使用。",
+            "pos": [
+                0.5,
+                1.0,
+                0.0
+            ],
+            "rot": [
+                0,
+                0,
+                0,
+                1
+            ],
+            "sampled_asset_desc": "Modern-traditional dining chair with wooden frame, upholstered leather seat, and decorative fabric cushion.",
+            "sampled_asset_jid": "c899366c-4578-432d-8c65-bef87b826be6",
+            "sampled_asset_size": [
+                0.622763991355896,
+                0.9066530000572905,
+                0.6533570289611816
+            ],
+            "size": [
+                1.5,
+                2.0,
+                0.0
+            ],
+            "uuid": "b44eb661-bbb1-4559-ab0b-e657430b2db2"
+        },
+        {
+            "desc": "蓝色封面的书籍，摆放在床头柜上，增添文化氛围。",
+            "pos": [
+                -0.8,
+                0.3,
+                1.2
+            ],
+            "rot": [
+                0,
+                0,
+                0,
+                1
+            ],
+            "sampled_asset_desc": "Wooden toy fire truck with vibrant colors, rolling wheels, and cylindrical characters, designed for child-friendly play.",
+            "sampled_asset_jid": "b425aeb4-9e5d-407c-85c2-9e371d120a7d",
+            "sampled_asset_size": [
+                0.12612000107765198,
+                0.08659999910742044,
+                0.05944000370800495
+            ],
+            "size": [
+                0.15,
+                0.1,
+                0.05
+            ],
+            "uuid": "d691d7a1-8d05-4205-9c0b-2eba13f6ec97"
+        },
+        {
+            "desc": "简约陶瓷花瓶，插着一支干花，点缀床头柜。",
+            "pos": [
+                0.8,
+                0.0,
+                1.2
+            ],
+            "rot": [
+                0,
+                0,
+                0,
+                1
+            ],
+            "sampled_asset_desc": "A glossy black cylindrical glass bottle with a distinctive red plastic cap.",
+            "sampled_asset_jid": "9f05274e-c1fd-4ba7-af75-1bbf4ae942a7",
+            "sampled_asset_size": [
+                0.079220000654459,
+                0.07903999448171817,
+                0.32599999010562897
+            ],
+            "size": [
+                0.1,
+                0.1,
+                0.3
+            ],
+            "uuid": "9707e577-9f4e-447c-a9b9-52319a7fa970"
+        }
+    ],
+    "room_type": "bedroom"
+}

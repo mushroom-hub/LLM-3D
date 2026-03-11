@@ -1,0 +1,189 @@
+{
+    "room_type": "livingroom",
+    "bounds_top": [
+        [
+            -1.5,
+            2.6,
+            2.45
+        ],
+        [
+            1.5,
+            2.6,
+            2.45
+        ],
+        [
+            1.5,
+            2.6,
+            -2.45
+        ],
+        [
+            -1.5,
+            2.6,
+            -2.45
+        ]
+    ],
+    "bounds_bottom": [
+        [
+            -1.5,
+            0.0,
+            2.45
+        ],
+        [
+            1.5,
+            0.0,
+            2.45
+        ],
+        [
+            1.5,
+            0.0,
+            -2.45
+        ],
+        [
+            -1.5,
+            0.0,
+            -2.45
+        ]
+    ],
+    "objects": [
+        {
+            "desc": "Modern minimalist three-seat sofa with brown leather cushions and a sleek wooden frame.",
+            "pos": [
+                0.97,
+                0.0,
+                0.49
+            ],
+            "rot": [
+                0.0,
+                -0.70711,
+                0.0,
+                0.70711
+            ],
+            "size": [
+                2.43,
+                0.92,
+                0.85
+            ],
+            "prompt": "sofa",
+            "sampled_asset_jid": "7e84460c-8b11-4647-ba30-e509f1ee5447",
+            "sampled_asset_desc": "Modern minimalist three-seat sofa with brown leather cushions and a sleek wooden frame.",
+            "sampled_asset_size": [
+                2.633229970932007,
+                0.9208667413331568,
+                1.0364899635314941
+            ],
+            "uuid": "347ddda8-7cf6-4397-b6df-07ff3090fe14"
+        },
+        {
+            "desc": "A modern, minimalistic TV stand with a gray wooden base, elevated clear glass top, and chrome supports.",
+            "pos": [
+                -1.25,
+                0.0,
+                0.4
+            ],
+            "rot": [
+                0.0,
+                0.70711,
+                0.0,
+                0.70711
+            ],
+            "size": [
+                1.58,
+                0.49,
+                0.47
+            ],
+            "prompt": "television",
+            "sampled_asset_jid": "44e3d608-f46b-4dd6-a6bd-1841d11f3719",
+            "sampled_asset_desc": "A modern, minimalistic TV stand with a gray wooden base, elevated clear glass top, and chrome supports.",
+            "sampled_asset_size": [
+                1.575423002243042,
+                0.4856298459920936,
+                0.4689659923315048
+            ],
+            "uuid": "e0d42971-fae0-4d55-925a-be963158985d"
+        },
+        {
+            "desc": "Modern tan leather armchair with high backrest, padded armrests, and chrome swivel base.",
+            "pos": [
+                0.1,
+                0.0,
+                1.91
+            ],
+            "rot": [
+                0.0,
+                1.0,
+                0.0,
+                0.0
+            ],
+            "size": [
+                0.75,
+                0.86,
+                0.87
+            ],
+            "prompt": "armchair",
+            "sampled_asset_jid": "07f7b6e7-999f-4bf3-8336-455febdcb23b",
+            "sampled_asset_desc": "Modern tan leather armchair with high backrest, padded armrests, and chrome swivel base.",
+            "sampled_asset_size": [
+                0.7487069964408875,
+                0.8635126362087249,
+                0.8721720278263092
+            ],
+            "uuid": "505c1561-f7b2-45a2-b97a-eebfff10fcde"
+        },
+        {
+            "desc": "A rustic, playful bear-shaped brown and white rug made of soft fabric and faux fur with a distinctive bear face accent.",
+            "pos": [
+                0.93,
+                0.0,
+                -1.3
+            ],
+            "rot": [
+                0.0,
+                0.0,
+                0.0,
+                1.0
+            ],
+            "size": [
+                1.32,
+                0.05,
+                0.9
+            ],
+            "prompt": "rug",
+            "sampled_asset_jid": "c773aa36-b23f-453a-92cd-688b5506c647",
+            "sampled_asset_desc": "A rustic, playful bear-shaped brown and white rug made of soft fabric and faux fur with a distinctive bear face accent.",
+            "sampled_asset_size": [
+                2.404360055923462,
+                0.08262007138998939,
+                1.632099986076355
+            ],
+            "uuid": "fbcfcd83-4daf-466d-838c-563328db7700"
+        },
+        {
+            "desc": "A modern black pendant lamp with spherical bulbs and a sleek, multi-armed design that combines futuristic and minimalist aesthetics.",
+            "pos": [
+                0.11,
+                1.41,
+                0.43
+            ],
+            "rot": [
+                0.0,
+                0.0,
+                0.0,
+                1.0
+            ],
+            "size": [
+                1.4,
+                1.19,
+                1.42
+            ],
+            "prompt": "lamp",
+            "sampled_asset_jid": "27908d6a-1195-4538-98ac-1a072798e58e",
+            "sampled_asset_desc": "A modern black pendant lamp with spherical bulbs and a sleek, multi-armed design that combines futuristic and minimalist aesthetics.",
+            "sampled_asset_size": [
+                1.4022959470748901,
+                1.189843009086072,
+                1.4197350144386292
+            ],
+            "uuid": "738ce6fe-2668-411f-b676-00b44b449d87"
+        }
+    ]
+}

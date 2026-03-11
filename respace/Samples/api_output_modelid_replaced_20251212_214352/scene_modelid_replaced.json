@@ -1,0 +1,185 @@
+{
+    "room_type": "bedroom",
+    "bounds_top": [
+        [
+            -2.25,
+            2.6,
+            1.55
+        ],
+        [
+            2.25,
+            2.6,
+            1.55
+        ],
+        [
+            2.25,
+            2.6,
+            0.65
+        ],
+        [
+            1.75,
+            2.6,
+            0.65
+        ],
+        [
+            1.75,
+            2.6,
+            -1.55
+        ],
+        [
+            -2.25,
+            2.6,
+            -1.55
+        ]
+    ],
+    "bounds_bottom": [
+        [
+            -2.25,
+            0.0,
+            1.55
+        ],
+        [
+            2.25,
+            0.0,
+            1.55
+        ],
+        [
+            2.25,
+            0.0,
+            0.65
+        ],
+        [
+            1.75,
+            0.0,
+            0.65
+        ],
+        [
+            1.75,
+            0.0,
+            -1.55
+        ],
+        [
+            -2.25,
+            0.0,
+            -1.55
+        ]
+    ],
+    "objects": [
+        {
+            "desc": "Modern minimalist king-size bed with dark brown fabric upholstery, low-profile wooden frame, and sleek design.",
+            "pos": [
+                -0.48,
+                0.0,
+                -0.3
+            ],
+            "rot": [
+                0.0,
+                0.0,
+                0.0,
+                1.0
+            ],
+            "size": [
+                2.3,
+                0.78,
+                2.42
+            ],
+            "prompt": "bed",
+            "sampled_asset_jid": "12b2dd21-c308-46e1-a375-471f67c2af77",
+            "sampled_asset_desc": "Contemporary luxury king-size bed with a high fabric padded headboard featuring channel tufting and nailhead trim, tapered legs, and a brown and gold color palette.",
+            "sampled_asset_size": [
+                2.065869927406311,
+                1.2604081437530112,
+                2.097230076789856
+            ],
+            "uuid": "5b4b6505-42c4-4621-a90f-69f0d3351561",
+            "model_id": "12b2dd21-c308-46e1-a375-471f67c2af77"
+        },
+        {
+            "desc": "A modern minimalist cylindrical marble side table featuring a sleek black and gray marbled surface.",
+            "pos": [
+                -1.97,
+                0.0,
+                -0.03
+            ],
+            "rot": [
+                0.0,
+                0.0,
+                0.0,
+                1.0
+            ],
+            "size": [
+                0.45,
+                0.46,
+                0.45
+            ],
+            "prompt": "bedside table",
+            "sampled_asset_jid": "1261c3e5-9d31-4474-abe5-da2c1668ef63",
+            "sampled_asset_desc": "Mid-century modern dark brown wooden nightstand with tapered legs, two drawers, and gold knobs.",
+            "sampled_asset_size": [
+                0.45417800545692444,
+                0.6000499857061472,
+                0.35345399379730225
+            ],
+            "uuid": "ab030c59-3693-40b8-8756-366d9f61bef9",
+            "model_id": "1261c3e5-9d31-4474-abe5-da2c1668ef63"
+        },
+        {
+            "desc": "Modern minimalist dark gray wardrobe with sliding doors and sleek horizontal metal accents offering a clean, sophisticated storage solution.",
+            "pos": [
+                1.44,
+                0.0,
+                -0.55
+            ],
+            "rot": [
+                0.0,
+                0.70711,
+                0.0,
+                -0.70711
+            ],
+            "size": [
+                1.8,
+                2.4,
+                0.6
+            ],
+            "prompt": "wardrobe",
+            "sampled_asset_jid": "75dabced-9793-433d-916a-55c5b9c38fbd",
+            "sampled_asset_desc": "Traditional rustic wooden wardrobe with glass-pane double doors, adjustable shelves, and crown molding.",
+            "sampled_asset_size": [
+                2.217479944229126,
+                2.2911031125586305,
+                0.6163968145847321
+            ],
+            "uuid": "bbafc04b-43ee-47e7-ad27-59db215d48b3",
+            "model_id": "75dabced-9793-433d-916a-55c5b9c38fbd"
+        },
+        {
+            "desc": "Minimalist modern black dressing table with sleek metal legs, a central decorative circle, and a large circular mirror.",
+            "pos": [
+                -1.51,
+                0.0,
+                1.34
+            ],
+            "rot": [
+                0.0,
+                1.0,
+                0.0,
+                0.0
+            ],
+            "size": [
+                1.13,
+                1.9,
+                0.41
+            ],
+            "prompt": "dresser",
+            "sampled_asset_jid": "230f9123-ded5-4ec9-989e-2cee7f07354b",
+            "sampled_asset_desc": "Modern gray dressing table with circular mirror, two drawers, slim metal legs, and gold accents.",
+            "sampled_asset_size": [
+                0.9501749873161316,
+                1.2996210192504805,
+                0.4587560147047043
+            ],
+            "uuid": "ef72c75f-74eb-482f-8781-73fe751794f1",
+            "model_id": "230f9123-ded5-4ec9-989e-2cee7f07354b"
+        }
+    ]
+}

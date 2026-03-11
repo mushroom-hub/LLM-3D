@@ -1,0 +1,123 @@
+{
+    "bounds_top": [
+        [
+            -1.35,
+            2.6,
+            1.45
+        ],
+        [
+            0.15,
+            2.6,
+            1.45
+        ],
+        [
+            0.15,
+            2.6,
+            2.15
+        ],
+        [
+            1.35,
+            2.6,
+            2.15
+        ],
+        [
+            1.35,
+            2.6,
+            -2.15
+        ],
+        [
+            -1.35,
+            2.6,
+            -2.15
+        ]
+    ],
+    "bounds_bottom": [
+        [
+            -1.35,
+            0.0,
+            1.45
+        ],
+        [
+            0.15,
+            0.0,
+            1.45
+        ],
+        [
+            0.15,
+            0.0,
+            2.15
+        ],
+        [
+            1.35,
+            0.0,
+            2.15
+        ],
+        [
+            1.35,
+            0.0,
+            -2.15
+        ],
+        [
+            -1.35,
+            0.0,
+            -2.15
+        ]
+    ],
+    "room_type": "bedroom",
+    "objects": [
+        {
+            "desc": "Mid-Century Modern nightstand with a wood construction",
+            "size": [
+                0.55,
+                0.45,
+                0.43
+            ],
+            "pos": [
+                1.1,
+                0.0,
+                0.95
+            ],
+            "rot": [
+                0,
+                -0.70711,
+                0,
+                0.70711
+            ],
+            "sampled_asset_jid": "b9851d90-ce96-4001-9090-8184d4cb3bb1",
+            "sampled_asset_desc": "Modern black nightstand with two drawers, oval front, sleek metal handles, and raised base.",
+            "sampled_asset_size": [
+                0.5610550045967102,
+                0.4475747232448839,
+                0.42478398978710175
+            ],
+            "uuid": "bca8c6c0-1b38-4743-bd14-08932584fc7e"
+        },
+        {
+            "desc": "木制床头柜",
+            "size": [
+                0.55,
+                0.45,
+                0.43
+            ],
+            "pos": [
+                1.23,
+                0.0,
+                -1.42
+            ],
+            "rot": [
+                0,
+                -0.70711,
+                0,
+                0.70711
+            ],
+            "sampled_asset_jid": "8fe26c63-f744-4dbf-9149-ed8147275bed",
+            "sampled_asset_desc": "Mid-Century Modern nightstand with a wood construction, featuring a rectangular shape, single drawer, tapered legs, and a distinctive cut-out handle.",
+            "sampled_asset_size": [
+                0.5451679825782776,
+                0.4497550555604022,
+                0.4266360104084015
+            ],
+            "uuid": "7f9ffadc-bf9a-4139-9d26-0bfa45a3b5c7"
+        }
+    ]
+}

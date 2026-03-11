@@ -1,0 +1,389 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>预览选择的模型</title>
+    <link rel="stylesheet" href="../static/style.css">
+    <style>
+        .preview-container {
+            max-width: 1400px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        
+        .objects-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 30px;
+            margin-bottom: 40px;
+        }
+        
+        .object-item {
+            background: #f8f9fa;
+            border: 2px solid #e9ecef;
+            border-radius: 15px;
+            padding: 25px;
+            transition: all 0.3s ease;
+        }
+        
+        .object-item:hover {
+            border-color: #3498db;
+            transform: translateY(-5px);
+            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+        }
+        
+        .object-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 20px;
+            padding-bottom: 15px;
+            border-bottom: 2px solid #e9ecef;
+        }
+        
+        .object-name {
+            font-size: 1.5em;
+            font-weight: bold;
+            color: #2c3e50;
+        }
+        
+        .object-status {
+            font-size: 0.9em;
+            font-weight: bold;
+        }
+        
+        .has-models {
+            color: #27ae60;
+        }
+        
+        .no-models {
+            color: #e74c3c;
+        }
+        
+        .models-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 15px;
+            margin-top: 15px;
+        }
+        
+        .model-option {
+            border: 2px solid #e9ecef;
+            border-radius: 10px;
+            padding: 15px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            text-align: center;
+            background: white;
+        }
+        
+        .model-option:hover {
+            border-color: #3498db;
+            transform: translateY(-2px);
+            box-shadow: 0 5px 15px rgba(52, 152, 219, 0.2);
+        }
+        
+        .model-option.selected {
+            border-color: #3498db;
+            background: #e3f2fd;
+            transform: translateY(-2px);
+            box-shadow: 0 5px 15px rgba(52, 152, 219, 0.3);
+        }
+        
+        .model-image-container {
+            width: 100%;
+            height: 120px;
+            margin-bottom: 10px;
+            border-radius: 8px;
+            overflow: hidden;
+            background: #f8f9fa;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        
+        .model-image {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+        
+        .model-image-placeholder {
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-size: 0.9em;
+        }
+        
+        .model-style {
+            font-weight: bold;
+            color: #2c3e50;
+            margin: 8px 0;
+            font-size: 1.1em;
+        }
+        
+        .model-info {
+            font-size: 0.85em;
+            color: #666;
+            line-height: 1.4;
+        }
+        
+        .no-model {
+            text-align: center;
+            color: #999;
+            padding: 30px;
+            background: #f8f9fa;
+            border-radius: 10px;
+            margin: 10px 0;
+        }
+        
+        .continue-btn {
+            background: linear-gradient(135deg, #27ae60, #2ecc71);
+            color: white;
+            border: none;
+            padding: 18px 50px;
+            border-radius: 30px;
+            font-size: 1.2em;
+            font-weight: bold;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            margin-top: 40px;
+            display: block;
+            width: 250px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        
+        .continue-btn:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 15px 30px rgba(39, 174, 96, 0.4);
+        }
+        
+        .continue-btn:disabled {
+            background: #95a5a6;
+            cursor: not-allowed;
+            transform: none;
+            box-shadow: none;
+        }
+        
+        .hidden-radio {
+            display: none;
+        }
+        
+        .info {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 25px;
+            border-radius: 15px;
+            margin-bottom: 30px;
+            text-align: center;
+        }
+        
+        .info h2 {
+            margin: 0 0 15px 0;
+            font-size: 1.8em;
+        }
+        
+        .info p {
+            margin: 5px 0;
+            font-size: 1.1em;
+        }
+        
+        .selection-count {
+            text-align: center;
+            margin: 20px 0;
+            font-size: 1.1em;
+            color: #666;
+        }
+    </style>
+</head>
+<body>
+    <div class="preview-container">
+        <div class="info">
+            <h2>🎨 预览选择的家具模型</h2>
+            <p>请为您选择的每个家具挑选喜欢的风格样式</p>
+            <p>💡 点击图片即可选择该风格的模型</p>
+        </div>
+        
+        <!-- 调试信息 -->
+        <div style="background: #fff3cd; padding: 10px; border-radius: 5px; margin-bottom: 20px; border-left: 4px solid #ffc107;">
+            <strong>调试信息:</strong> 共 {{ selected_objects|length }} 个物品需要选择模型
+        </div>
+        
+        <form method="POST" action="/preview" id="previewForm">
+            <div class="objects-grid">
+                {% for obj in selected_objects %}
+                <div class="object-item">
+                    <div class="object-header">
+                        <div class="object-name">{{ obj.name }}</div>
+                        <div class="object-status {% if obj.has_models %}has-models{% else %}no-models{% endif %}">
+                            {% if obj.has_models %}
+                                ✓ 有 {{ obj.models|length }} 个可选模型
+                            {% else %}
+                                ✗ 无匹配模型
+                            {% endif %}
+                        </div>
+                    </div>
+                    
+                    {% if obj.has_models %}
+                    <div class="models-grid">
+                        {% for model in obj.models %}
+                        <label class="model-option {% if model.model_id == obj.selected_model.model_id %}selected{% endif %}"
+                               data-object="{{ obj.name }}" data-model="{{ model.model_id }}">
+                            <input type="radio" name="model_{{ obj.name }}" value="{{ model.model_id }}" 
+                                   class="hidden-radio" {% if model.model_id == obj.selected_model.model_id %}checked{% endif %}>
+                            <div class="model-content">
+                                <div class="model-image-container">
+                                    {% set image_exists = object_processor.asset_searcher.check_image_exists(model.model_id) %}
+                                    {% if image_exists %}
+                                        <img src="{{ url_for('serve_model_image', model_id=model.model_id) }}" 
+                                             alt="{{ model.style }}" class="model-image"
+                                             onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+                                        <div class="model-image-placeholder" style="display: none;">
+                                            <span>图片加载失败</span>
+                                        </div>
+                                    {% else %}
+                                        <div class="model-image-placeholder">
+                                            <span>暂无图片</span>
+                                        </div>
+                                    {% endif %}
+                                </div>
+                                <div class="model-style">{{ model.style or '未知风格' }}</div>
+                                <div class="model-info">
+                                    <div>
+                                        <strong>类别:</strong> {{ model.category or '未知' }} | 
+                                        <strong>主题:</strong> {{ model.theme or '未知' }} | 
+                                        <strong>材质:</strong> {{ model.material or '未知' }}
+                                    </div>
+                                </div>
+                            </div>
+                        </label>
+                        {% endfor %}
+                    </div>
+                    {% else %}
+                    <div class="no-model">
+                        <p>抱歉，未在资产库中找到匹配的 "{{ obj.name }}" 模型</p>
+                        <p>系统将使用默认模型生成场景</p>
+                    </div>
+                    {% endif %}
+                </div>
+                {% else %}
+                <div class="no-model" style="grid-column: 1 / -1;">
+                    <p>没有找到任何选择的物品，请返回重新选择</p>
+                    <a href="/search" style="color: #3498db; text-decoration: none;">返回选择页面</a>
+                </div>
+                {% endfor %}
+            </div>
+            
+            {% if selected_objects %}
+            <div class="selection-count" id="selectionCount">
+                已选择 <span id="selectedCount">0</span> / {{ selected_objects|length }} 个物品
+            </div>
+            
+            <button type="submit" class="continue-btn" id="continueBtn">确认并生成3D场景</button>
+            {% endif %}
+        </form>
+    </div>
+
+    <script>
+        // 为模型选项添加点击选择功能
+        document.addEventListener('DOMContentLoaded', function() {
+            const modelOptions = document.querySelectorAll('.model-option');
+            const continueBtn = document.getElementById('continueBtn');
+            const selectedCountEl = document.getElementById('selectedCount');
+            
+            function updateSelection() {
+                const selectedOptions = document.querySelectorAll('.model-option.selected');
+                if (selectedCountEl) {
+                    selectedCountEl.textContent = selectedOptions.length;
+                }
+                
+                // 检查是否所有有模型的物体都选择了模型
+                const objectItems = document.querySelectorAll('.object-item');
+                let allSelected = true;
+                
+                objectItems.forEach(item => {
+                    const hasModels = item.querySelector('.has-models') !== null;
+                    if (hasModels) {
+                        const selected = item.querySelector('.model-option.selected') !== null;
+                        if (!selected) {
+                            allSelected = false;
+                        }
+                    }
+                });
+                
+                if (continueBtn) {
+                    continueBtn.disabled = !allSelected;
+                    if (allSelected) {
+                        continueBtn.title = "所有物品已选择完成";
+                        continueBtn.innerHTML = "🎉 确认并生成3D场景";
+                    } else {
+                        continueBtn.title = "请为所有物品选择模型";
+                        continueBtn.innerHTML = "确认并生成3D场景";
+                    }
+                }
+            }
+            
+            modelOptions.forEach(option => {
+                option.addEventListener('click', function(e) {
+                    // 如果点击的是radio本身，不处理
+                    if (e.target.type === 'radio') return;
+                    
+                    const radio = this.querySelector('input[type="radio"]');
+                    if (radio) {
+                        const objectId = this.dataset.object;
+                        
+                        // 取消同组其他选项的选中状态
+                        document.querySelectorAll(`.model-option[data-object="${objectId}"]`).forEach(opt => {
+                            opt.classList.remove('selected');
+                            opt.querySelector('input[type="radio"]').checked = false;
+                        });
+                        
+                        // 选中当前选项
+                        radio.checked = true;
+                        this.classList.add('selected');
+                        
+                        updateSelection();
+                    }
+                });
+            });
+            
+            // 初始化
+            updateSelection();
+            
+            // 表单提交前验证
+            const previewForm = document.getElementById('previewForm');
+            if (previewForm) {
+                previewForm.addEventListener('submit', function(e) {
+                    const objectItems = document.querySelectorAll('.object-item');
+                    let hasErrors = false;
+                    
+                    objectItems.forEach(item => {
+                        const hasModels = item.querySelector('.has-models') !== null;
+                        if (hasModels) {
+                            const selected = item.querySelector('.model-option.selected') !== null;
+                            if (!selected) {
+                                hasErrors = true;
+                                item.style.borderColor = '#e74c3c';
+                            } else {
+                                item.style.borderColor = '';
+                            }
+                        }
+                    });
+                    
+                    if (hasErrors) {
+                        e.preventDefault();
+                        alert('请为所有有可选模型的物品选择具体的模型样式！');
+                    }
+                });
+            }
+        });
+    </script>
+</body>
+</html>
+

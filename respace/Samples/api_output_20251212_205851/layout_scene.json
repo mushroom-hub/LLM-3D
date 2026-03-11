@@ -1,0 +1,133 @@
+{
+    "room_type": "bedroom",
+    "bounds_top": [
+        [
+            -1.4,
+            2.6,
+            1.45
+        ],
+        [
+            1.4,
+            2.6,
+            1.45
+        ],
+        [
+            1.4,
+            2.6,
+            -1.45
+        ],
+        [
+            -1.4,
+            2.6,
+            -1.45
+        ]
+    ],
+    "bounds_bottom": [
+        [
+            -1.4,
+            0.0,
+            1.45
+        ],
+        [
+            1.4,
+            0.0,
+            1.45
+        ],
+        [
+            1.4,
+            0.0,
+            -1.45
+        ],
+        [
+            -1.4,
+            0.0,
+            -1.45
+        ]
+    ],
+    "objects": [
+        {
+            "desc": "Modern minimalist king-size bed with dark brown fabric upholstery, low-profile wooden frame, and sleek design.",
+            "pos": [
+                -0.19,
+                0.0,
+                0.23
+            ],
+            "rot": [
+                0.0,
+                0.70711,
+                0.0,
+                0.70711
+            ],
+            "size": [
+                2.3,
+                0.78,
+                2.42
+            ],
+            "prompt": "bed",
+            "sampled_asset_jid": "8d4810de-1c7b-4ace-b9b3-edf23619b063",
+            "sampled_asset_desc": "Modern minimalist king-size bed with dark brown fabric upholstery, low-profile wooden frame, and sleek design.",
+            "sampled_asset_size": [
+                2.298889994621277,
+                0.7766077188498457,
+                2.415320038795471
+            ],
+            "uuid": "b86f4196-554d-4112-9f8e-ebf73242ca55"
+        },
+        {
+            "desc": "Modern minimalist gray nightstand with a single drawer, open shelf, and geometric cutout handle, made of painted wood.",
+            "pos": [
+                -1.2,
+                0.0,
+                1.1
+            ],
+            "rot": [
+                0.0,
+                0.70711,
+                0.0,
+                0.70711
+            ],
+            "size": [
+                0.57,
+                0.8,
+                0.39
+            ],
+            "prompt": "nightstand",
+            "sampled_asset_jid": "43cb86ce-5ccb-468a-afd1-0b901fc858c8",
+            "sampled_asset_desc": "Modern minimalist gray nightstand with a single drawer, open shelf, and geometric cutout handle, made of painted wood.",
+            "sampled_asset_size": [
+                0.5714020133018494,
+                0.7975359702519924,
+                0.3925030082464218
+            ],
+            "uuid": "196ee2af-ce0a-4cdd-878c-f9634690b553"
+        },
+        {
+            "desc": "A modern contemporary black metal pendant lamp with five clear glass spherical shades on radiating arms.",
+            "pos": [
+                0.05,
+                2.09,
+                0.13
+            ],
+            "rot": [
+                0.0,
+                0.0,
+                0.0,
+                1.0
+            ],
+            "size": [
+                0.65,
+                0.51,
+                0.62
+            ],
+            "prompt": "lamp",
+            "sampled_asset_jid": "3f308c49-1bfb-4770-8571-a147581f65cc",
+            "sampled_asset_desc": "A modern contemporary black metal pendant lamp with five clear glass spherical shades on radiating arms.",
+            "sampled_asset_size": [
+                0.6466670036315918,
+                0.5073419826367171,
+                0.6180830001831055
+            ],
+            "uuid": "f4800bc4-2803-4bcb-ac09-6ebf70caba72"
+        }
+    ]
+}

@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>选择搜索模型</title>
+    <link rel="stylesheet" href="../static/style.css">
+    <style>
+        /* 新增样式 - 整个选项框可点击 */
+        .stuff-item {
+            background: #f8f9fa;
+            border: 2px solid #e9ecef;
+            border-radius: 10px;
+            padding: 15px;
+            margin-bottom: 10px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            position: relative;
+        }
+        
+        .stuff-item:hover {
+            border-color: #3498db;
+            transform: translateY(-2px);
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+        }
+        
+        .stuff-item.selected {
+            border-color: #3498db;
+            background: #e3f2fd; /* 浅蓝色背景 */
+            transform: translateY(-2px);
+            box-shadow: 0 5px 15px rgba(52, 152, 219, 0.3);
+        }
+        
+        .stuff-item label {
+            display: block;
+            cursor: pointer;
+            margin: 0;
+            padding: 0;
+        }
+        
+        .selectBox {
+            position: absolute;
+            opacity: 0; /* 隐藏原始复选框 */
+            z-index: 1; /* 确保复选框在最上层 */
+        }
+        
+        .stuff-content {
+            display: flex;
+            align-items: baseline; /* 让名称和描述基线对齐 */
+            gap: 10px; /* 名称和描述之间的间距 */
+            padding-right: 40px; /* 为选中标记留空间 */
+            flex-wrap: wrap; /* 如果内容太长可以换行 */
+            pointer-events: none; /* 让内容区域不接收点击事件 */
+        }
+        
+        .stuff-name {
+            font-size: 1.1em;
+            font-weight: bold;
+            color: #2c3e50;
+            white-space: nowrap; /* 名称不换行 */
+        }
+        
+        .prompt {
+            color: #7f8c8d;
+            font-size: 0.95em;
+            line-height: 1.4;
+            flex: 1; /* 描述占据剩余空间 */
+        }
+        
+        /* 选中标记 */
+        .stuff-item.selected::after {
+            content: "✓";
+            position: absolute;
+            top: 15px;
+            right: 15px;
+            width: 24px;
+            height: 24px;
+            background: #3498db;
+            color: white;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: bold;
+            font-size: 14px;
+        }
+        
+        /* 全选样式调整 */
+        .select-all-item {
+            background: #f8f9fa;
+            border: 2px solid #e9ecef;
+            border-radius: 10px;
+            padding: 15px;
+            margin-bottom: 10px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+        
+        .select-all-item:hover {
+            border-color: #3498db;
+            background: #e3f2fd;
+        }
+        
+        .select-all-item label {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            cursor: pointer;
+            margin: 0;
+            font-weight: bold;
+            color: #34495e;
+        }
+        
+        .select-all-checkbox {
+            width: 18px;
+            height: 18px;
+        }
+        
+        /* 信息区域样式 */
+        .info {
+            background: #f8f9fa;
+            padding: 20px;
+            border-radius: 10px;
+            margin-bottom: 20px;
+            border-left: 4px solid #3498db;
+        }
+        
+        .info p {
+            margin: 5px 0;
+        }
+        
+        /* 按钮样式 */
+        .search-btn {
+            background: linear-gradient(135deg, #27ae60, #2ecc71);
+            color: white;
+            border: none;
+            padding: 12px 30px;
+            border-radius: 25px;
+            font-size: 1.1em;
+            font-weight: bold;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            margin-top: 20px;
+        }
+        
+        .search-btn:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 10px 20px rgba(39, 174, 96, 0.3);
+        }
+        
+        .back-btn {
+            background: #95a5a6;
+            color: white;
+            padding: 10px 20px;
+            border-radius: 5px;
+            text-decoration: none;
+            transition: background 0.3s ease;
+        }
+        
+        .back-btn:hover {
+            background: #7f8c8d;
+        }
+    </style>
+    <script>
+        // 初始化函数
+        function initializeSelection() {
+            const stuffItems = document.querySelectorAll('.stuff-item:not(.select-all-item)');
+            
+            stuffItems.forEach(item => {
+                const checkbox = item.querySelector('.selectBox');
+                
+                // 设置初始选中状态
+                if (checkbox.checked) {
+                    item.classList.add('selected');
+                }
+                
+                // 复选框变化时更新视觉状态
+                checkbox.addEventListener('change', function() {
+                    if (this.checked) {
+                        item.classList.add('selected');
+                    } else {
+                        item.classList.remove('selected');
+                    }
+                    updateSelectedCount();
+                    updateSelectAllState();
+                });
+            });
+            
+            // 全选功能
+            const selectAllCheckbox = document.getElementById('selectAll');
+            const selectAllItem = document.querySelector('.select-all-item');
+            
+            selectAllItem.addEventListener('click', function(e) {
+                if (e.target.type !== 'checkbox') {
+                    selectAllCheckbox.checked = !selectAllCheckbox.checked;
+                    toggleCheckboxes();
+                }
+            });
+            
+            // 全选复选框变化时更新所有复选框
+            selectAllCheckbox.addEventListener('change', function() {
+                toggleCheckboxes();
+            });
+            
+            updateSelectedCount();
+        }
+        
+        function toggleCheckboxes() {
+            var checkboxes = document.getElementsByClassName("selectBox");
+            var selectAllCheckbox = document.getElementById("selectAll");
+            var stuffItems = document.querySelectorAll('.stuff-item:not(.select-all-item)');
+            
+            for (var i = 0; i < checkboxes.length; i++) {
+                checkboxes[i].checked = selectAllCheckbox.checked;
+                
+                // 更新视觉状态
+                if (selectAllCheckbox.checked) {
+                    stuffItems[i].classList.add('selected');
+                } else {
+                    stuffItems[i].classList.remove('selected');
+                }
+            }
+            updateSelectedCount();
+        }
+        
+        function updateSelectedCount() {
+            var checkboxes = document.getElementsByClassName("selectBox");
+            var selectedCount = 0;
+            for (var i = 0; i < checkboxes.length; i++) {
+                if (checkboxes[i].checked) {
+                    selectedCount++;
+                }
+            }
+            document.getElementById("selectedCount").textContent = selectedCount;
+        }
+        
+        function updateSelectAllState() {
+            var checkboxes = document.getElementsByClassName("selectBox");
+            var selectAllCheckbox = document.getElementById("selectAll");
+            var allChecked = true;
+            
+            for (var i = 0; i < checkboxes.length; i++) {
+                if (!checkboxes[i].checked) {
+                    allChecked = false;
+                    break;
+                }
+            }
+            
+            selectAllCheckbox.checked = allChecked;
+        }
+
+        // 页面加载时初始化
+        document.addEventListener('DOMContentLoaded', function() {
+            initializeSelection();
+        });
+    </script>
+</head>
+<body>
+    <h1>选择要生成的模型</h1>
+    
+    <div class="info">
+        <p>请选择您想要在3D场景中生成的物体：</p>
+        <p>已选择 <span id="selectedCount">0</span> 个物体</p>
+        <p>房间类型: {{ room_type }}</p>
+        <p><small>💡 提示：点击整个选项框即可选择/取消选择</small></p>
+    </div>
+    
+    <form method="POST" action="/search">
+        <div class="stuff-list">
+            {% for stuff in stuffs %}
+            <div class="stuff-item">
+                <label for="model-{{ loop.index }}">
+                    <input type="checkbox" name="var" value="{{ loop.index }}" 
+                           class="selectBox" id="model-{{ loop.index }}">
+                    <div class="stuff-content">
+                        <div class="stuff-name">{{ loop.index }} {{ stuff }}</div>
+                        <div class="prompt">描述: {{ prompts[loop.index0] }}</div>
+                    </div>
+                </label>
+            </div>
+            {% endfor %}
+            
+            <div class="select-all-item">
+                <label for="selectAll">
+                    <input type="checkbox" id="selectAll" class="select-all-checkbox">
+                    全选
+                </label>
+            </div>
+            
+            <button type="submit" class="search-btn">生成3D场景</button>
+        </div>
+    </form>
+    
+    <div class="navigation">
+        <a href="/" class="back-btn">返回首页</a>
+    </div>
+</body>
+</html>

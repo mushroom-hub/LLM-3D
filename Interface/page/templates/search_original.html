@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>选择搜索模型</title>
+    <link rel="stylesheet" href="../static/style.css">
+    <script>
+        function toggleCheckboxes() {
+            var checkboxes = document.getElementsByClassName("selectBox");
+            var selectAllCheckbox = document.getElementById("selectAll");
+            for (var i = 0; i < checkboxes.length; i++) {
+                checkboxes[i].checked = selectAllCheckbox.checked;
+            }
+            updateSelectedCount();
+        }
+        
+        function updateSelectedCount() {
+            var checkboxes = document.getElementsByClassName("selectBox");
+            var selectedCount = 0;
+            for (var i = 0; i < checkboxes.length; i++) {
+                if (checkboxes[i].checked) {
+                    selectedCount++;
+                }
+            }
+            document.getElementById("selectedCount").textContent = selectedCount;
+        }
+
+        // 页面加载时初始化计数
+        document.addEventListener('DOMContentLoaded', function() {
+            updateSelectedCount();
+        });
+    </script>
+</head>
+<body>
+    <h1>选择要生成的模型</h1>
+    
+    <div class="info">
+        <p>请选择您想要在3D场景中生成的物体：</p>
+        <p>已选择 <span id="selectedCount">0</span> 个物体</p>
+        <p>房间类型: {{ room_type }}</p>
+    </div>
+    
+    <form method="POST" action="/search">
+        <div class="stuff-list">
+            {% for stuff in stuffs %}
+            <div class="stuff-item">
+                <label for="model-{{ loop.index }}">
+                    <input type="checkbox" name="var" value="{{ loop.index }}" 
+                           class="selectBox" onchange="updateSelectedCount()">
+                    <strong>{{ loop.index }} {{ stuff }}</strong>
+                    <span class="prompt">描述: {{ prompts[loop.index0] }}</span>
+                </label>
+            </div>
+            <br>
+            {% endfor %}
+            
+            <br>
+            <div class="stuff-item">
+                <input type="checkbox" id="selectAll" onclick="toggleCheckboxes()">
+                <label for="selectAll">全选</label>
+            </div>
+            <br>
+            
+            <button type="submit" class="search-btn">生成3D场景</button>
+        </div>
+    </form>
+    
+    <div class="navigation">
+        <a href="/" class="back-btn">返回首页</a>
+    </div>
+</body>
+</html>

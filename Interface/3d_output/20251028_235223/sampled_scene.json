@@ -1,0 +1,339 @@
+{
+    "bounds_bottom": [
+        [
+            -1.35,
+            0.0,
+            1.45
+        ],
+        [
+            0.15,
+            0.0,
+            1.45
+        ],
+        [
+            0.15,
+            0.0,
+            2.15
+        ],
+        [
+            1.35,
+            0.0,
+            2.15
+        ],
+        [
+            1.35,
+            0.0,
+            -2.15
+        ],
+        [
+            -1.35,
+            0.0,
+            -2.15
+        ]
+    ],
+    "bounds_top": [
+        [
+            -1.35,
+            2.6,
+            1.45
+        ],
+        [
+            0.15,
+            2.6,
+            1.45
+        ],
+        [
+            0.15,
+            2.6,
+            2.15
+        ],
+        [
+            1.35,
+            2.6,
+            2.15
+        ],
+        [
+            1.35,
+            2.6,
+            -2.15
+        ],
+        [
+            -1.35,
+            2.6,
+            -2.15
+        ]
+    ],
+    "objects": [
+        {
+            "desc": "一棵高大的枫树，枝叶繁茂，叶子呈金红色，位于床正对的窗外，形成自然背景。",
+            "pos": [
+                0.0,
+                0.0,
+                5.0
+            ],
+            "rot": [
+                0,
+                0,
+                0,
+                1
+            ],
+            "sampled_asset_desc": "Modern minimalist gray three-seat sofa with vertical channel tufting, batwing arms, slim metal legs, and neutral cushions.",
+            "sampled_asset_jid": "77fd6f28-1138-42c3-8105-82c0e818ae31",
+            "sampled_asset_size": [
+                2.4866080284118652,
+                0.8018129986157874,
+                0.8767110109329224
+            ],
+            "size": [
+                0.6,
+                0.6,
+                8.0
+            ],
+            "uuid": "dcf7bb27-735d-4a44-8940-1d04e66505ad"
+        },
+        {
+            "desc": "一簇波斯菊和雏菊，颜色清新，点缀在窗台边缘，增强自然气息。",
+            "pos": [
+                1.5,
+                -2.0,
+                0.5
+            ],
+            "rot": [
+                0,
+                0,
+                0,
+                1
+            ],
+            "sampled_asset_desc": "A modern, minimalistic black ribbed ceramic pot with green synthetic leaves and white flower buds, featuring a smooth texture.",
+            "sampled_asset_jid": "68f58fd6-f5ba-480f-a982-a484c4cb1b66",
+            "sampled_asset_size": [
+                0.39281000196933746,
+                0.4000299871398203,
+                0.458950012922287
+            ],
+            "size": [
+                0.4,
+                0.4,
+                0.5
+            ],
+            "uuid": "c63749a1-e9d7-425e-b9dc-bb47310c4213"
+        },
+        {
+            "desc": "一条蜿蜒的小溪，水流缓慢，岸边有鹅卵石和青苔，远处山坡下，营造远山近水效果。",
+            "pos": [
+                2.0,
+                -3.0,
+                0.0
+            ],
+            "rot": [
+                0,
+                0,
+                0,
+                1
+            ],
+            "sampled_asset_desc": "Modern minimalist black TV stand with open shelving, unique gold grid pattern, and wheels for mobility.",
+            "sampled_asset_jid": "3d6a3c5a-5d95-4c24-8dc9-4277f0caeed6",
+            "sampled_asset_size": [
+                1.67399001121521,
+                1.0701999939583402,
+                0.40699999034404755
+            ],
+            "size": [
+                3.0,
+                0.5,
+                0.2
+            ],
+            "uuid": "fe6d5a8f-b7f5-463d-8159-5a75ab72bdbb"
+        },
+        {
+            "desc": "几块天然岩石，表面有青苔，放置在小溪边，增加自然景观层次感。",
+            "pos": [
+                2.5,
+                -3.5,
+                0.0
+            ],
+            "rot": [
+                0,
+                0,
+                0,
+                1
+            ],
+            "sampled_asset_desc": "This sleek, modern minimalist desk features a white metal and wood construction with a rectangular shape, clean lines, an integrated drawer, and T-shaped legs.",
+            "sampled_asset_jid": "2d529a92-bbac-4b3c-a506-51ed907edadd",
+            "sampled_asset_size": [
+                1.2000200152397156,
+                0.7773199640505482,
+                0.6012099981307983
+            ],
+            "size": [
+                1.2,
+                0.8,
+                0.6
+            ],
+            "uuid": "5cf70dd6-28d1-47fd-b4e8-25e921c56566"
+        },
+        {
+            "desc": "一只蓝色蝴蝶，缓缓飞过窗前，增添生动感。",
+            "pos": [
+                0.5,
+                -1.0,
+                0.5
+            ],
+            "rot": [
+                0,
+                0,
+                0,
+                1
+            ],
+            "sampled_asset_desc": "Modern minimalist rectangular footstool with a cushioned black fabric seat, natural wood frame, and an open-frame design featuring an integrated shelf underneath.",
+            "sampled_asset_jid": "dec538ad-063a-454a-aade-fa839303e780",
+            "sampled_asset_size": [
+                0.04276000149548054,
+                0.055490001569523884,
+                0.0402700025588274
+            ],
+            "size": [
+                0.05,
+                0.05,
+                0.02
+            ],
+            "uuid": "278e0cf2-1d3f-4b8f-862e-1b9a62e16102"
+        },
+        {
+            "desc": "一只棕色松鼠在枫树枝桠间跳跃，表现出活泼可爱的样子。",
+            "pos": [
+                0.8,
+                -0.5,
+                1.0
+            ],
+            "rot": [
+                0,
+                0,
+                0,
+                1
+            ],
+            "sampled_asset_desc": "A modern minimalist brown wooden stool with curved openwork slat construction and a symmetrical design.",
+            "sampled_asset_jid": "6d4e8a0a-c127-4916-9398-edd667a3c32e",
+            "sampled_asset_size": [
+                0.13135000318288803,
+                0.09839999666690984,
+                0.13186000287532806
+            ],
+            "size": [
+                0.15,
+                0.1,
+                0.1
+            ],
+            "uuid": "a5c968a6-25df-42e2-ac71-d33bd1b5f354"
+        },
+        {
+            "desc": "常春藤沿窗框攀爬，部分叶子垂落，增添生机与自然感。",
+            "pos": [
+                -1.0,
+                -1.0,
+                0.5
+            ],
+            "rot": [
+                0,
+                0,
+                0,
+                1
+            ],
+            "sampled_asset_desc": "A modern minimalist dining chair with a dark brown fabric padded seat and backrest, and sleek white metal legs.",
+            "sampled_asset_jid": "046db8d3-46ab-4ff5-a2d1-f480c7a57cd3",
+            "sampled_asset_size": [
+                0.38983000814914703,
+                0.8765000305109503,
+                0.5309800207614899
+            ],
+            "size": [
+                2.0,
+                0.1,
+                0.1
+            ],
+            "uuid": "867d6e76-155d-4aa7-86e8-8a07d9984aa2"
+        },
+        {
+            "desc": "一朵蒲公英，白色绒毛随风飘散，象征自由与希望。",
+            "pos": [
+                1.2,
+                -2.5,
+                0.5
+            ],
+            "rot": [
+                0,
+                0,
+                0,
+                1
+            ],
+            "sampled_asset_desc": "A sleek, modern bronze metal pull handle with ergonomic design and minimalist curves.",
+            "sampled_asset_jid": "a54640c2-ff01-423e-9615-d3e619cb5990",
+            "sampled_asset_size": [
+                0.01600000075995922,
+                0.052000000998140686,
+                0.017000004649162292
+            ],
+            "size": [
+                0.03,
+                0.03,
+                0.01
+            ],
+            "uuid": "a9362840-c69c-4b71-a3e2-f3bca7d82bf7"
+        },
+        {
+            "desc": "一个木质鸟巢，挂在枫树的枝桠间，暗示有鸟类栖息。",
+            "pos": [
+                0.7,
+                -0.3,
+                1.2
+            ],
+            "rot": [
+                0,
+                0,
+                0,
+                1
+            ],
+            "sampled_asset_desc": "Modern black and white striped ceramic vase and cup set with conical and cylindrical shapes.",
+            "sampled_asset_jid": "003873a6-59d0-4a94-afd9-129195b2644b",
+            "sampled_asset_size": [
+                0.19067999720573425,
+                0.19416000446962567,
+                0.1319199949502945
+            ],
+            "size": [
+                0.2,
+                0.2,
+                0.15
+            ],
+            "uuid": "4c74aba3-bf96-4c94-91f5-e0f5777c58be"
+        },
+        {
+            "desc": "一片金黄色落叶，漂浮在窗前，增强季节感与画面动态。",
+            "pos": [
+                1.0,
+                -2.0,
+                0.5
+            ],
+            "rot": [
+                0,
+                0,
+                0,
+                1
+            ],
+            "sampled_asset_desc": "Wooden toy fire truck with vibrant colors, rolling wheels, and cylindrical characters, designed for child-friendly play.",
+            "sampled_asset_jid": "b425aeb4-9e5d-407c-85c2-9e371d120a7d",
+            "sampled_asset_size": [
+                0.12612000107765198,
+                0.08659999910742044,
+                0.05944000370800495
+            ],
+            "size": [
+                0.15,
+                0.1,
+                0.01
+            ],
+            "uuid": "565faa84-90af-4d22-9e85-74e3eabe9120"
+        }
+    ],
+    "room_type": "bedroom"
+}

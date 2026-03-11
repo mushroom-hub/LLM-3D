@@ -1,0 +1,303 @@
+{
+    "room_type": "livingroom",
+    "bounds_top": [
+        [
+            -4.5,
+            2.8,
+            1.45
+        ],
+        [
+            -4.2,
+            2.8,
+            1.45
+        ],
+        [
+            -4.2,
+            2.8,
+            2.05
+        ],
+        [
+            4.5,
+            2.8,
+            2.05
+        ],
+        [
+            4.5,
+            2.8,
+            -1.75
+        ],
+        [
+            4.3,
+            2.8,
+            -1.75
+        ],
+        [
+            4.3,
+            2.8,
+            -2.05
+        ],
+        [
+            3.2,
+            2.8,
+            -2.05
+        ],
+        [
+            3.2,
+            2.8,
+            -1.75
+        ],
+        [
+            -4.2,
+            2.8,
+            -1.75
+        ],
+        [
+            -4.2,
+            2.8,
+            -1.25
+        ],
+        [
+            -4.5,
+            2.8,
+            -1.25
+        ]
+    ],
+    "bounds_bottom": [
+        [
+            -4.5,
+            0.0,
+            1.45
+        ],
+        [
+            -4.2,
+            0.0,
+            1.45
+        ],
+        [
+            -4.2,
+            0.0,
+            2.05
+        ],
+        [
+            4.5,
+            0.0,
+            2.05
+        ],
+        [
+            4.5,
+            0.0,
+            -1.75
+        ],
+        [
+            4.3,
+            0.0,
+            -1.75
+        ],
+        [
+            4.3,
+            0.0,
+            -2.05
+        ],
+        [
+            3.2,
+            0.0,
+            -2.05
+        ],
+        [
+            3.2,
+            0.0,
+            -1.75
+        ],
+        [
+            -4.2,
+            0.0,
+            -1.75
+        ],
+        [
+            -4.2,
+            0.0,
+            -1.25
+        ],
+        [
+            -4.5,
+            0.0,
+            -1.25
+        ]
+    ],
+    "objects": [
+        {
+            "desc": "Modern minimalist three-seat sofa with grey fabric upholstery, brown wooden frame, and assorted throw pillows.",
+            "pos": [
+                -0.09,
+                0.0,
+                1.56
+            ],
+            "rot": [
+                0.0,
+                1.0,
+                0.0,
+                0.0
+            ],
+            "size": [
+                2.48,
+                0.83,
+                0.93
+            ],
+            "prompt": "sofa",
+            "sampled_asset_jid": "1e71562b-34e3-44ac-b28e-d17589060ad0",
+            "sampled_asset_desc": "A contemporary L-shaped navy blue three-seat sofa with fabric upholstery, plush cushions, and metallic legs.",
+            "sampled_asset_size": [
+                2.9206100702285767,
+                0.910866055806018,
+                1.863182008266449
+            ],
+            "uuid": "35088b09-820a-4181-b1a0-3865222c1645",
+            "model_id": "1e71562b-34e3-44ac-b28e-d17589060ad0"
+        },
+        {
+            "desc": "A modern minimalist coffee table featuring a round black metal tray top with tapered walnut wooden legs and a sleek, two-tone finish.",
+            "pos": [
+                -0.09,
+                0.0,
+                0.11
+            ],
+            "rot": [
+                0.0,
+                0.0,
+                0.0,
+                1.0
+            ],
+            "size": [
+                0.92,
+                0.31,
+                0.92
+            ],
+            "prompt": "coffee table",
+            "sampled_asset_jid": "0d3e3b3c-3f1a-47ee-8566-1052cb8635b6",
+            "sampled_asset_desc": "Traditional dark brown wooden coffee table with turned legs, lower shelf, and smooth rectangular top.",
+            "sampled_asset_size": [
+                1.2413670420646667,
+                0.3863150409286309,
+                0.7125349938869476
+            ],
+            "uuid": "aa750260-9809-42d6-958d-853c9f475358",
+            "model_id": "0d3e3b3c-3f1a-47ee-8566-1052cb8635b6"
+        },
+        {
+            "desc": "Modern rustic dark brown wooden TV stand with open shelf and two drawers, elevated on metal legs.",
+            "pos": [
+                -0.1,
+                0.0,
+                -1.4
+            ],
+            "rot": [
+                0.0,
+                0.0,
+                0.0,
+                1.0
+            ],
+            "size": [
+                2.11,
+                0.75,
+                0.38
+            ],
+            "prompt": "television",
+            "sampled_asset_jid": "2054cf1c-c37a-454c-9552-784fe7180bc8",
+            "sampled_asset_desc": "Modern flat-screen television with a minimalist design, featuring a black display and thin silver bezel made of glass and metal.",
+            "sampled_asset_size": [
+                1.33474999666214,
+                0.8029999707535946,
+                0.08165999874472618
+            ],
+            "uuid": "df433027-6db1-4cb0-a7b1-e972d4aa4bd4",
+            "model_id": "2054cf1c-c37a-454c-9552-784fe7180bc8"
+        },
+        {
+            "desc": "Contemporary modern cream armchair with curved armrests, brown textured cushions, and wooden tapered legs for a sophisticated appeal.",
+            "pos": [
+                -3.4,
+                0.0,
+                0.39
+            ],
+            "rot": [
+                0.0,
+                0.70711,
+                0.0,
+                0.70711
+            ],
+            "size": [
+                0.79,
+                0.75,
+                0.7
+            ],
+            "prompt": "armchair",
+            "sampled_asset_jid": "517709cf-79a5-3309-af40-05e0c5ec992c",
+            "sampled_asset_desc": "A contemporary minimalist dark brown armchair with leather upholstery, a wood frame, foam padding, curved backrest, integrated armrests, and a sleek, seamless design.",
+            "sampled_asset_size": [
+                0.7396739721298218,
+                0.8352270198520273,
+                0.8508060276508331
+            ],
+            "uuid": "12a9386a-a632-46ce-ba07-97918c027979",
+            "model_id": "517709cf-79a5-3309-af40-05e0c5ec992c"
+        },
+        {
+            "desc": "Industrial-style black metal four-tier open-back shelf with wire frame, adjustable height, and shelves.",
+            "pos": [
+                2.22,
+                0.0,
+                1.79
+            ],
+            "rot": [
+                0.0,
+                1.0,
+                0.0,
+                0.0
+            ],
+            "size": [
+                0.47,
+                0.84,
+                0.3
+            ],
+            "prompt": "bookshelf",
+            "sampled_asset_jid": "f1f6fd18-6494-40d5-9fba-988c0734aaf3",
+            "sampled_asset_desc": "A contemporary, minimalist dark brown wooden bookcase with open shelving, cubical compartments, a central framed section, and paneled cabinet doors.",
+            "sampled_asset_size": [
+                2.996999979019165,
+                2.54999996970205,
+                0.35000093281269073
+            ],
+            "uuid": "dbed24bb-9b07-4133-b4f2-24e6497c41ec",
+            "model_id": "f1f6fd18-6494-40d5-9fba-988c0734aaf3"
+        },
+        {
+            "desc": "Modern industrial pendant lamp with black conical shades and a gold circular frame featuring fabric cords.",
+            "pos": [
+                -0.09,
+                1.59,
+                0.11
+            ],
+            "rot": [
+                0.0,
+                0.0,
+                0.0,
+                1.0
+            ],
+            "size": [
+                1.02,
+                1.21,
+                1.0
+            ],
+            "prompt": "lamps",
+            "sampled_asset_jid": "a1cfe72e-bd14-408c-ad68-ef6c7ef2a7bb",
+            "sampled_asset_desc": "Elegant multi-tiered pendant lamp with ornate glass arms and cream fabric lampshades, perfect for classic and sophisticated interiors.",
+            "sampled_asset_size": [
+                0.9087219834327698,
+                0.9326659874641337,
+                0.9087219834327698
+            ],
+            "uuid": "75e300a5-eb03-4ae6-ab95-e5aa835b6e04",
+            "model_id": "a1cfe72e-bd14-408c-ad68-ef6c7ef2a7bb"
+        }
+    ]
+}

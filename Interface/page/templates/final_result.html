@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>3D场景生成完成</title>
+    <style>
+        body { font-family: Arial, sans-serif; margin: 40px; }
+        .container { max-width: 800px; margin: 0 auto; }
+        .success-box {
+            background: #d4edda;
+            color: #155724;
+            padding: 20px;
+            border-radius: 10px;
+            margin: 20px 0;
+            text-align: center;
+        }
+        .video-container {
+            background: #f8f9fa;
+            padding: 20px;
+            border-radius: 10px;
+            margin: 20px 0;
+            text-align: center;
+        }
+        video {
+            max-width: 100%;
+            border-radius: 5px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+        }
+        .btn {
+            background: #007bff;
+            color: white;
+            padding: 12px 24px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            text-decoration: none;
+            display: inline-block;
+            margin: 10px;
+        }
+        .btn:hover { background: #0056b3; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="success-box">
+            <h1>✅ 3D场景生成完成！</h1>
+            <p>您的360°视频已成功生成</p>
+        </div>
+
+        <div class="video-container">
+            <h2>🎥 360°场景视频</h2>
+            <video controls autoplay loop>
+                <source src="{{ video_path }}" type="video/mp4">
+                您的浏览器不支持视频标签。
+            </video>
+            <p><strong>文件名:</strong> {{ video_name }}</p>
+        </div>
+
+        <div style="text-align: center; margin-top: 30px;">
+            <p>您可以：</p>
+            <a href="/" class="btn">生成新的场景</a>
+            <a href="{{ video_path }}" class="btn" download>下载视频</a>
+        </div>
+
+        <div style="margin-top: 30px; color: #666; font-size: 14px;">
+            <p><strong>提示：</strong>视频文件保存在本地，您可以在文件管理器中找到它。</p>
+        </div>
+    </div>
+</body>
+</html>
